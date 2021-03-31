@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GhabzeTo.Domain.Core\GhabzeTo.Domain.Core.csproj" />
+    <ProjectReference Include="..\GhabzeTo.Infra.Resources\GhabzeTo.Infra.Resources.csproj" />
+  </ItemGroup>
+
+</Project>

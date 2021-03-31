@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190703102410_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190704211245_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705073534_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705074016_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705085300_Add-AuditLog.cs" />
+    <Compile Remove="Migrations\20190705131824_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705142734_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705150155_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190705183909_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190710075344_test.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
+    <PackageReference Include="Z.EntityFramework.Extensions.EFCore" Version="2.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GhabzeTo.Common\GhabzeTo.Common.csproj" />
+    <ProjectReference Include="..\GhabzeTo.Domain\GhabzeTo.Domain.csproj" />
+    <ProjectReference Include="..\GhabzeTo.Infra.Data.Core\GhabzeTo.Infra.Data.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Seeders\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Migrations\Elmah.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
